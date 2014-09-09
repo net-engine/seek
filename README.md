@@ -1,26 +1,28 @@
 # Seek
 
 TODO: Write a gem description
+This gem works with both Rails and non-Rails apps.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'seek_api'
+gem 'seek', github: 'net-engine/seek'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install seek_api
-
 ## Usage
 
 TODO: Write usage instructions here
+
+### Important notes
+
+* Any call to *live* environment will overide current jobs in there.
+* Any call to *test* environment will not be saved in Seek database.
 
 ## Contributing
 
