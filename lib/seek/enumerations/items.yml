@@ -1,0 +1,10 @@
+enumerations:
+  :items:
+  - 'Jobtitle'
+  - 'Bullet1'
+  - 'Bullet2'
+  - 'Bullet3'
+  - 'ContactName'
+  - 'PhoneNo'
+  - 'FaxNo'
+  - 'RefNumber'
