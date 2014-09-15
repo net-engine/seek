@@ -14,6 +14,8 @@ module Seek
         call :upload_file, xml: build_envelope
       end
 
+      private
+
       def build_envelope
         Nokogiri::XML::Builder.new(encoding: 'utf-8') do |xml|
           xml.send 'soap:Envelope',
@@ -23,7 +25,7 @@ module Seek
 
             xml.send 'soap:Body' do
               xml.send 'UploadFile', xmlns: 'http://webservices.seek.com.au' do
-                xml.send 'Token', 'encrypted_access_token'
+                xml.send 'Token', encrypted_access_token
 
                 xml.send 'xmlFastlaneFile' do
                   xml.send 'FastLanePlus', 'UploaderID' => @uploader_id, 'AgentID' => '', 'Version' => '3.0' do
@@ -79,8 +81,6 @@ module Seek
 
         [Nokogiri::XML(builder.to_xml).root.to_xml]
       end
-
-      private
 
       def call(action, options)
         @client ||= Seek::Adapters::SoapClient.new(wsdl_url, test_environment: @test_environment)
