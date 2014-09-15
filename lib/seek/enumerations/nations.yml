@@ -1,0 +1,568 @@
+enumerations:
+  :nations:
+  - :id: 'Australia'
+    :description: 'Australia'
+    :states:
+    - :id: 'ACT'
+      :description: 'Australian Capital Territory'
+      :locations:
+      - :id: 'locACT'
+        :description: 'ACT'
+        :areas: []
+
+    - :id: 'NSW'
+      :description: 'New South Wales'
+      :locations:
+      - :id: 'AlburyWodongaMurray'
+        :description: 'Albury Wodonga & Murray'
+        :areas: []
+
+      - :id: 'BlueMountainsCentralWest'
+        :description: 'Blue Mountains & Central West'
+        :areas: []
+
+      - :id: 'CoffsHarbourNorthCoast'
+        :description: 'Coffs Harbour & North Coast'
+        :areas: []
+
+      - :id: 'DubboCentralNSW'
+        :description: 'Dubbo & Central NSW'
+        :areas: []
+
+      - :id: 'FarWestNorthCentralNSW'
+        :description: 'Far West & North Central NSW'
+        :areas: []
+
+      - :id: 'GosfordCentralCoast'
+        :description: 'Gosford & Central Coast'
+        :areas: []
+
+      - :id: 'GoulburnSouthernTablelands'
+        :description: 'Goulburn & Southern Tablelands'
+        :areas: []
+
+      - :id: 'LismoreFarNorthCoast'
+        :description: 'Lismore & Far North Coast'
+        :areas: []
+
+      - :id: 'NewcastleMaitlandHunter'
+        :description: 'Newcastle, Maitland & Hunter'
+        :areas: []
+
+      - :id: 'PortMacquarieMidNorthCoast'
+        :description: 'Port Macquarie & Mid North Coast'
+        :areas: []
+
+      - :id: 'RichmondHawkesbury'
+        :description: 'Richmond & Hawkesbury'
+        :areas: []
+
+      - :id: 'Sydney'
+        :description: 'Sydney'
+        :areas:
+        - :id: 'CBDInnerWestEasternSuburbs'
+          :description: 'CBD, Inner West & Eastern Suburbs'
+        - :id: 'NorthShoreNorthernBeaches'
+          :description: 'North Shore & Northern Beaches'
+        - :id: 'NorthWestHillsDistrict'
+          :description: 'North West & Hills District'
+        - :id: 'ParramattaWesternSuburbs'
+          :description: 'Parramatta & Western Suburbs'
+        - :id: 'RydeMacquariePark'
+          :description: 'Ryde & Macquarie Park'
+        - :id: 'SouthWestM5Corridor'
+          :description: 'South West & M5 Corridor'
+        - :id: 'SouthernSuburbsSutherlandShire'
+          :description: 'Southern Suburbs & Sutherland Shire'
+
+      - :id: 'TamworthNorthWestNSW'
+        :description: 'Tamworth & North West NSW'
+        :areas: []
+
+      - :id: 'TumutSouthernHighlandsSnowy'
+        :description: 'Tumut, Southern Highlands & Snowy'
+        :areas: []
+
+      - :id: 'WaggaWaggaRiverina'
+        :description: 'Wagga Wagga & Riverina'
+        :areas: []
+
+      - :id: 'WollongongIllawarraSouthCoast'
+        :description: 'Wollongong, Illawarra & South Coast'
+        :areas: []
+
+    - :id: 'NT'
+      :description: 'Northern Territories'
+      :locations:
+      - :id: 'AliceSpringsCentralAustralia'
+        :description: 'Alice Springs & Central Australia'
+        :areas: []
+
+      - :id: 'Darwin'
+        :description: 'Darwin'
+        :areas: []
+
+      - :id: 'KatherineNorthernAustralia'
+        :description: 'Katherine & Northern Australia'
+        :areas: []
+
+    - :id: 'QLD'
+      :description: 'Queensland'
+      :locations:
+      - :id: 'Brisbane'
+        :description: 'Brisbane'
+        :areas:
+        - :id: 'BaysideEasternSuburbs'
+          :description: 'Bayside & Eastern Suburbs'
+        - :id: 'BrisbaneCBDInnerSuburbs'
+          :description: 'CBD & Inner Suburbs'
+        - :id: 'BrisbaneNorthernSuburbs'
+          :description: 'Northern Suburbs'
+        - :id: 'SouthernSuburbsLogan'
+          :description: 'Southern Suburbs & Logan'
+        - :id: 'WesternSuburbsIpswich'
+          :description: 'Western Suburbs & Ipswich'
+
+      - :id: 'BundabergWideBayBurnett'
+        :description: 'Bundaberg & Wide Bay Burnett'
+        :areas: []
+
+      - :id: 'CairnsFarNorth'
+        :description: 'Cairns & Far North'
+        :areas: []
+
+      - :id: 'GladstoneCentralQLD'
+        :description: 'Gladstone & Central QLD'
+        :areas: []
+
+      - :id: 'GoldCoast'
+        :description: 'Gold Coast'
+        :areas: []
+
+      - :id: 'HerveyBayFraserCoast'
+        :description: 'Hervey Bay & Fraser Coast'
+        :areas: []
+
+      - :id: 'MackayCoalfields'
+        :description: 'Mackay & Coalfields'
+        :areas: []
+
+      - :id: 'MtIsaWesternQLD'
+        :description: 'Mt Isa & Western QLD'
+        :areas: []
+
+      - :id: 'RockhamptonCapricornCoast'
+        :description: 'Rockhampton & Capricorn Coast'
+        :areas: []
+
+      - :id: 'SomersetLockyer'
+        :description: 'Somerset & Lockyer'
+        :areas: []
+
+      - :id: 'SunshineCoast'
+        :description: 'Sunshine Coast'
+        :areas: []
+
+      - :id: 'ToowoombaDarlingDowns'
+        :description: 'Toowoomba & Darling Downs'
+        :areas: []
+
+      - :id: 'TownsvilleNorthernQLD'
+        :description: 'Townsville & Northern QLD'
+        :areas: []
+
+    - :id: 'SA'
+      :description: 'South Australia'
+      :locations:
+      - :id: 'Adelaide'
+        :description: 'Adelaide'
+        :areas: []
+
+      - :id: 'AdelaideHillsBarossa'
+        :description: 'Adelaide Hills & Barossa'
+        :areas: []
+
+      - :id: 'CooberPedyOutbackSA'
+        :description: 'Coober Pedy & Outback SA'
+        :areas: []
+
+      - :id: 'FleurieuPeninsulaKangarooIsland'
+        :description: 'Fleurieu Peninsula & Kangaroo Island'
+        :areas: []
+
+      - :id: 'MtGambierLimestoneCoast'
+        :description: 'Mt Gambier & Limestone Coast'
+        :areas: []
+
+      - :id: 'RiverlandMurrayMallee'
+        :description: 'Riverland & Murray Mallee'
+        :areas: []
+
+      - :id: 'WhyallaEyrePeninsula'
+        :description: 'Whyalla & Eyre Peninsula'
+        :areas: []
+
+      - :id: 'YorkPeninsulaClareValley'
+        :description: 'York Peninsula & Clare Valley'
+        :areas: []
+
+    - :id: 'TAS'
+      :description: 'Tasmania'
+      :locations:
+      - :id: 'CentralSouthEast'
+        :description: 'Central & South East'
+        :areas: []
+
+      - :id: 'DevonportNorthWest'
+        :description: 'Devonport & North West'
+        :areas: []
+
+      - :id: 'Hobart'
+        :description: 'Hobart'
+        :areas: []
+
+      - :id: 'LauncestonNorthEast'
+        :description: 'Launceston & North East'
+        :areas: []
+
+    - :id: 'VIC'
+      :description: 'Victoria'
+      :locations:
+      - :id: 'BairnsdaleGippsland'
+        :description: 'Bairnsdale & Gippsland'
+        :areas: []
+
+      - :id: 'BallaratCentralHighlands'
+        :description: 'Ballarat & Central Highlands'
+        :areas: []
+
+      - :id: 'BendigoGoldfieldsMacedonRanges'
+        :description: 'Bendigo, Goldfields & Macedon Ranges'
+        :areas: []
+
+      - :id: 'GeelongGreatOceanRoad'
+        :description: 'Geelong & Great Ocean Road'
+        :areas: []
+
+      - :id: 'HorshamGrampians'
+        :description: 'Horsham & Grampians'
+        :areas: []
+
+      - :id: 'Melbourne'
+        :description: 'Melbourne'
+        :areas:
+        - :id: 'BaysideSouthEasternSuburbs'
+          :description: 'Bayside & South Eastern Suburbs'
+        - :id: 'MelbourneCBDInnerSuburbs'
+          :description: 'CBD & Inner Suburbs'
+        - :id: 'MelbourneEasternSuburbs'
+          :description: 'Eastern Suburbs'
+        - :id: 'MelbourneNorthernSuburbs'
+          :description: 'Northern Suburbs'
+        - :id: 'WesternSuburbs'
+          :description: 'Western Suburbs'
+
+      - :id: 'MilduraMurray'
+        :description: 'Mildura & Murray'
+        :areas: []
+
+      - :id: 'MorningtonPeninsulaBassCoast'
+        :description: 'Mornington Peninsula & Bass Coast'
+        :areas: []
+
+      - :id: 'SheppartonGoulburnValley'
+        :description: 'Shepparton & Goulburn Valley'
+        :areas: []
+
+      - :id: 'TraralgonLaTrobeValley'
+        :description: 'Traralgon & La Trobe Valley'
+        :areas: []
+
+      - :id: 'YarraValleyHighCountry'
+        :description: 'Yarra Valley & High Country'
+        :areas: []
+
+    - :id: 'WA'
+      :description: 'Western Australia'
+      :locations:
+      - :id: 'AlbanyGreatSouthern'
+        :description: 'Albany & Great Southern'
+        :areas: []
+
+      - :id: 'BroomeKimberley'
+        :description: 'Broome & Kimberley'
+        :areas: []
+
+      - :id: 'BunburySouthWest'
+        :description: 'Bunbury & South West'
+        :areas: []
+
+      - :id: 'GeraldtonGascoyneMidwest'
+        :description: 'Geraldton, Gascoyne & Midwest'
+        :areas: []
+
+      - :id: 'KalgoorlieGoldfieldsEsperance'
+        :description: 'Kalgoorlie, Goldfields & Esperance'
+        :areas: []
+
+      - :id: 'MandurahPeel'
+        :description: 'Mandurah & Peel'
+        :areas: []
+
+      - :id: 'NorthamWheatbelt'
+        :description: 'Northam & Wheatbelt'
+        :areas: []
+
+      - :id: 'Perth'
+        :description: 'Perth'
+        :areas:
+        - :id: 'CBDInnerWesternSuburbs'
+          :description: 'CBD, Inner & Western Suburbs'
+        - :id: 'PerthEasternSuburbs'
+          :description: 'Eastern Suburbs'
+        - :id: 'FremantleSouthernSuburbs'
+          :description: 'Fremantle & Southern Suburbs'
+        - :id: 'NorthernSuburbsJoondalup'
+          :description: 'Northern Suburbs & Joondalup'
+        - :id: 'RockinghamKwinana'
+          :description: 'Rockingham & Kwinana'
+
+      - :id: 'PortHedlandKarrathaPilbara'
+        :description: 'Port Hedland, Karratha & Pilbara'
+        :areas: []
+
+  - :id: 'NationOther'
+    :description: 'Nation - Other'
+    :states:
+    - :id: 'Overseas'
+      :description: 'Overseas'
+      :locations:
+      - :id: 'Americas'
+        :description: 'Americas'
+        :areas:
+        - :id: 'CaribbeanCentralSouthAmerica'
+          :description: 'Caribbean, Central & South America'
+        - :id: 'USACanada'
+          :description: 'USA & Canada'
+
+      - :id: 'AsiaPacific'
+        :description: 'Asia Pacific'
+        :areas:
+        - :id: 'CentralAsia'
+          :description: 'Central Asia'
+        - :id: 'ChinaHongKongTaiwan'
+          :description: 'China, Hong Kong & Taiwan'
+        - :id: 'IndiaSouthAsia'
+          :description: 'India & South Asia'
+        - :id: 'JapanKorea'
+          :description: 'Japan & Korea'
+        - :id: 'PNGPacificIslands'
+          :description: 'PNG & Pacific Islands'
+        - :id: 'SouthEastAsia'
+          :description: 'South-East Asia'
+
+      - :id: 'EuropeRussia'
+        :description: 'Europe & Russia'
+        :areas:
+        - :id: 'RussiaEasternEurope'
+          :description: 'Russia & Eastern Europe'
+        - :id: 'WesternEurope'
+          :description: 'Western Europe'
+
+      - :id: 'MiddleEastAfrica'
+        :description: 'Middle East & Africa'
+        :areas:
+        - :id: 'MiddleEastNorthAfrica'
+          :description: 'Middle East & North Africa'
+        - :id: 'SubSaharanAfrica'
+          :description: 'Sub-Saharan Africa'
+
+  - :id: 'NewZealand'
+    :description: 'New Zealand'
+    :states:
+    - :id: 'NZ'
+      :description: 'New Zealand'
+      :locations:
+      - :id: 'Auckland'
+        :description: 'Auckland'
+        :areas:
+        - :id: 'AucklandCentral'
+          :description: 'Auckland Central'
+        - :id: 'ManukauEastAuckland'
+          :description: 'Manukau & East Auckland'
+        - :id: 'PapakuraFranklin'
+          :description: 'Papakura & Franklin'
+        - :id: 'RodneyNorthShore'
+          :description: 'Rodney & North Shore'
+        - :id: 'WaitakereWestAuckland'
+          :description: 'Waitakere & West Auckland'
+
+      - :id: 'BayofPlenty'
+        :description: 'Bay of Plenty'
+        :areas:
+        - :id: 'RestofBayofPlenty'
+          :description: 'Rest of Bay of Plenty'
+        - :id: 'Rotorua'
+          :description: 'Rotorua'
+        - :id: 'Tauranga'
+          :description: 'Tauranga'
+
+      - :id: 'Canterbury'
+        :description: 'Canterbury'
+        :areas:
+        - :id: 'Christchurch'
+          :description: 'Christchurch'
+        - :id: 'NorthCanterbury'
+          :description: 'North Canterbury'
+        - :id: 'RestofCanterbury'
+          :description: 'Rest of Canterbury'
+        - :id: 'TimaruSouthCanterbury'
+          :description: 'Timaru & South Canterbury'
+
+      - :id: 'GisborneRegion'
+        :description: 'Gisborne'
+        :areas:
+        - :id: 'Gisborne'
+          :description: 'Gisborne'
+        - :id: 'RestofGisborne'
+          :description: 'Rest of Gisborne'
+
+      - :id: 'HawkesBay'
+        :description: 'Hawkes Bay'
+        :areas:
+        - :id: 'Hastings'
+          :description: 'Hastings'
+        - :id: 'Napier'
+          :description: 'Napier'
+        - :id: 'RestofHawkesBay'
+          :description: 'Rest of Hawkes Bay'
+
+      - :id: 'Manawatu'
+        :description: 'Manawatu'
+        :areas:
+        - :id: 'PalmerstonNorth'
+          :description: 'Palmerston North'
+        - :id: 'RestofManawatu'
+          :description: 'Rest of Manawatu'
+        - :id: 'Wanganui'
+          :description: 'Wanganui'
+
+      - :id: 'Marlborough'
+        :description: 'Marlborough'
+        :areas:
+        - :id: 'Blenheim'
+          :description: 'Blenheim'
+        - :id: 'RestofMarlborough'
+          :description: 'Rest of Marlborough'
+
+      - :id: 'Northland'
+        :description: 'Northland'
+        :areas:
+        - :id: 'RestofNorthland'
+          :description: 'Rest of Northland'
+        - :id: 'Whangarei'
+          :description: 'Whangarei'
+
+      - :id: 'Otago'
+        :description: 'Otago'
+        :areas:
+        - :id: 'Dunedin'
+          :description: 'Dunedin'
+        - :id: 'QueenstownWanaka'
+          :description: 'Queenstown & Wanaka'
+        - :id: 'RestofOtago'
+          :description: 'Rest of Otago'
+
+      - :id: 'Southland'
+        :description: 'Southland'
+        :areas:
+        - :id: 'Invercargill'
+          :description: 'Invercargill'
+        - :id: 'RestofSouthland'
+          :description: 'Rest of Southland'
+
+      - :id: 'Taranaki'
+        :description: 'Taranaki'
+        :areas:
+        - :id: 'NewPlymouth'
+          :description: 'New Plymouth'
+        - :id: 'RestofTaranaki'
+          :description: 'Rest of Taranaki'
+
+      - :id: 'Tasman'
+        :description: 'Tasman'
+        :areas:
+        - :id: 'Nelson'
+          :description: 'Nelson'
+        - :id: 'RestofTasman'
+          :description: 'Rest of Tasman'
+
+      - :id: 'Waikato'
+        :description: 'Waikato'
+        :areas:
+        - :id: 'Hamilton'
+          :description: 'Hamilton'
+        - :id: 'RestofWaikato'
+          :description: 'Rest of Waikato'
+        - :id: 'Taupo'
+          :description: 'Taupo'
+        - :id: 'ThamesCoromandel'
+          :description: 'Thames & Coromandel'
+
+      - :id: 'Wellington'
+        :description: 'Wellington'
+        :areas:
+        - :id: 'HuttValley'
+          :description: 'Hutt Valley'
+        - :id: 'PoriruaKapitiCoast'
+          :description: 'Porirua & Kapiti Coast'
+        - :id: 'RestofWellingtonRegion'
+          :description: 'Rest of Wellington Region'
+        - :id: 'WellingtonCentral'
+          :description: 'Wellington Central'
+
+      - :id: 'WestCoast'
+        :description: 'West Coast'
+        :areas:
+        - :id: 'Greymouth'
+          :description: 'Greymouth'
+        - :id: 'RestofWestCoast'
+          :description: 'Rest of West Coast'
+
+  - :id: 'UnitedKingdom'
+    :description: 'United Kingdom'
+    :states:
+    - :id: 'UK'
+      :description: 'United Kingdom'
+      :locations:
+      - :id: 'Ireland'
+        :description: 'Ireland'
+        :areas: []
+
+      - :id: 'London'
+        :description: 'London'
+        :areas: []
+
+      - :id: 'RestoftheUK'
+        :description: 'Rest of the UK'
+        :areas:
+        - :id: 'ChannelIslands'
+          :description: 'Channel Islands'
+        - :id: 'Midlands'
+          :description: 'Midlands'
+        - :id: 'NorthWestEngland'
+          :description: 'North West England'
+        - :id: 'NorthernEngland'
+          :description: 'Northern England'
+        - :id: 'NorthernIreland'
+          :description: 'Northern Ireland'
+        - :id: 'Scotland'
+          :description: 'Scotland'
+        - :id: 'SouthEastHomeCounties'
+          :description: 'South East & Home Counties'
+        - :id: 'SouthWestEngland'
+          :description: 'South West England'
+        - :id: 'ThamesValleyOxford'
+          :description: 'Thames Valley & Oxford'
+        - :id: 'Wales'
+          :description: 'Wales'
