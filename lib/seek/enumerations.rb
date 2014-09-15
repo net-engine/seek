@@ -1,5 +1,3 @@
-require 'ostruct'
-
 module Seek
   class Enumerations
     class << self

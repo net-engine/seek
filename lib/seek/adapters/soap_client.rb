@@ -1,5 +1,3 @@
-require 'savon'
-
 module Seek
   module Adapters
     class SoapClient
