@@ -17,26 +17,31 @@ RSpec.describe Seek::Job do
   end
 
   describe '#valid?' do
-    subject { described_class.new({}) }
+    subject { create_valid_job(all_attributes: true) }
 
     context 'when it has all required attributes' do
       it 'returns true' do
-        described_class::REQUIRED_ATTRIBUTES.each do |attribute|
-          subject.send("#{attribute}=", 'value')
-        end
-
         expect(subject).to be_valid
       end
     end
 
     context 'when it does not have all required attributes' do
       it 'returns false' do
-        described_class::REQUIRED_ATTRIBUTES.drop(1).each do |attribute|
-          subject.send("#{attribute}=", 'value')
-        end
+        required_attribute = described_class::REQUIRED_ATTRIBUTES.sample
+        subject.send("#{required_attribute}=", nil)
 
         expect(subject).to_not be_valid
       end
+    end
+  end
+
+  describe '#to_xml' do
+    subject { create_valid_job(all_attributes: true) }
+
+    it 'generates the XML' do
+      xml = File.read File.expand_path('../../../fixtures/job.xml', __FILE__)
+
+      expect(subject.to_xml).to eql(xml.strip)
     end
   end
 end
