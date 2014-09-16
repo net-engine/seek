@@ -7,8 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = Seek::VERSION
   spec.authors       = ['NetEngine']
   spec.email         = ['team+seek+gem@netengine.com.au']
-  spec.summary       = %q{Integration with Seek (http://seek.com.au)}
-  spec.description   = %q{Integration with Seek (http://seek.com.au)}
+
+  spec.summary       = %q{Client library to integrate your app with Seek (http://seek.com.au)}
+  spec.description   = %q{Client library to integrate your app with Seek (http://seek.com.au)}
   spec.homepage      = 'http://github.com/net-engine/seek'
   spec.license       = 'MIT'
 
