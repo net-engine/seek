@@ -12,7 +12,7 @@ module Seek
       item_job_title item_bullet1 item_bullet2 item_bullet3 item_contact_name item_phone_number item_fax_number item_reference_number
       listing_area
       salary_additional_text
-      stand_out_logo_id stand_out_bullet1 stand_out_bullet2 stand_out_bullet3
+      stand_out_logo_id stand_out_bullet_1 stand_out_bullet_2 stand_out_bullet_3
     ]
 
     attr_accessor(*REQUIRED_ATTRIBUTES)
@@ -74,9 +74,9 @@ module Seek
             xml.send 'StandOut',
               'IsStandOut' => @is_stand_out,
               'LogoID'     => @stand_out_logo_id,
-              'Bullet1'    => @stand_out_bullet1,
-              'Bullet2'    => @stand_out_bullet2,
-              'Bullet3'    => @stand_out_bullet3
+              'Bullet1'    => @stand_out_bullet_1,
+              'Bullet2'    => @stand_out_bullet_2,
+              'Bullet3'    => @stand_out_bullet_3
           end
         end
       end
