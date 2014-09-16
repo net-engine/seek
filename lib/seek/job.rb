@@ -70,7 +70,7 @@ module Seek
             'Max'            => @salary_max,
             'AdditionalText' => @salary_additional_text
 
-          if @is_stand_out
+          if @is_stand_out.to_s == 'true'
             xml.send 'StandOut',
               'IsStandOut' => @is_stand_out,
               'LogoID'     => @stand_out_logo_id,
