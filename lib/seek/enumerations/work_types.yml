@@ -1,0 +1,10 @@
+enumerations:
+  :work_types:
+  - :id: 'CasualVacation'
+    :description: 'Casual/Vacation'
+  - :id: 'ContractTemp'
+    :description: 'Contract/Temp'
+  - :id: 'FullTime'
+    :description: 'Full Time'
+  - :id: 'PartTime'
+    :description: 'Part Time'

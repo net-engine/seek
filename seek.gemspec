@@ -7,8 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = Seek::VERSION
   spec.authors       = ['NetEngine']
   spec.email         = ['team+seek+gem@netengine.com.au']
-  spec.summary       = %q{Integration with Seek (http://seek.com.au)}
-  spec.description   = %q{Integration with Seek (http://seek.com.au)}
+
+  spec.summary       = %q{Client library to integrate your app with Seek (http://seek.com.au)}
+  spec.description   = %q{Client library to integrate your app with Seek (http://seek.com.au)}
   spec.homepage      = 'http://github.com/net-engine/seek'
   spec.license       = 'MIT'
 
@@ -16,9 +17,15 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.7'
-  spec.add_development_dependency 'rake',    '~> 10.0'
+  spec.required_ruby_version = '>= 2.1.0'
 
-  spec.add_dependency 'savon',      '~> 2.6'
+  spec.add_development_dependency 'bundler', '~> 1.7'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rake',    '~> 10.0'
+  spec.add_development_dependency 'rspec'
+
+  spec.add_dependency 'httparty'
   spec.add_dependency 'httpclient', '~> 2.4'
+  spec.add_dependency 'nokogiri'
+  spec.add_dependency 'savon', '~> 2.6'
 end
