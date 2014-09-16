@@ -11,20 +11,20 @@ module Seek
 
       def create_hash_from_yml(resource)
         file = File.expand_path("../enumerations/#{resource}.yml", __FILE__)
-        hashes2ostruct(YAML.load_file(file)['enumerations'][resource.to_sym])
+        to_open_struct(YAML.load_file(file)['enumerations'][resource.to_sym])
       end
 
-      def hashes2ostruct(object)
+      def to_open_struct(object)
         case object
           when Hash
             object = object.clone
             object.each do |key, value|
-              object[key] = hashes2ostruct(value)
+              object[key] = to_open_struct(value)
             end
             OpenStruct.new(object)
           when Array
             object = object.clone
-            object.map! { |i| hashes2ostruct(i) }
+            object.map! { |i| to_open_struct(i) }
           else
             object
         end
