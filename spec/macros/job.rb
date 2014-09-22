@@ -3,8 +3,10 @@ module Macros
     attributes  = Seek::Job::REQUIRED_ATTRIBUTES.clone
     attributes.push(*Seek::Job::NOT_REQUIRED_ATTRIBUTES) if all_attributes
 
+    boolean_attributes = %i[is_stand_out residents_only]
+
     job_attributes = attributes.inject({}) do |hash, attribute|
-      hash[attribute] = "#{attribute}_value"
+      hash[attribute] = boolean_attributes.include?(attribute) ? true : "#{attribute}_value"
       hash
     end
 

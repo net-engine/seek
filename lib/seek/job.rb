@@ -43,7 +43,7 @@ module Seek
 
           xml.send 'ApplicationEmail', @application_email
           xml.send 'ApplicationURL',   @application_url
-          xml.send 'ResidentsOnly',    @residents_only
+          xml.send 'ResidentsOnly',    @residents_only ? 'Yes' : 'No'
 
           xml.send 'Items' do
             xml.send 'Item', @item_job_title,        'Name' => 'Jobtitle'
@@ -72,7 +72,7 @@ module Seek
 
           if @is_stand_out.to_s == 'true'
             xml.send 'StandOut',
-              'IsStandOut' => @is_stand_out,
+              'IsStandOut' => 'Yes',
               'LogoID'     => @stand_out_logo_id,
               'Bullet1'    => @stand_out_bullet_1,
               'Bullet2'    => @stand_out_bullet_2,
