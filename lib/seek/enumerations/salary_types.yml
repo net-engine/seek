@@ -1,0 +1,14 @@
+enumerations:
+  :salary_types:
+  - :id: 'AnnualPackage'
+    :description: 'Annual Package'
+    :hint: 'This is an annual salary package (base salary only)'
+  - :id: 'AnnualCommission'
+    :description: 'Annual Commission'
+    :hint: 'This should reflect the salary range for the job role based on the OTE salary for salaries that will include a commission component (base + commission)'
+  - :id: 'CommissionOnly'
+    :description: 'Commission Only'
+    :hint: 'This is an OTE salary for salaries that are commission only (no base salary)'
+  - :id: 'HourlyRate'
+    :description: 'Hourly Rate'
+    :hint: 'This is a salary paid at an hourly rate (base only)'

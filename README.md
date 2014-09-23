@@ -34,6 +34,7 @@ Seek::Enumerations.work_types      # => [...]
 Seek::Enumerations.items           # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
+Seek::Enumerations.salary_types    # => [...]
 ```
 
 ## How to create a job object
