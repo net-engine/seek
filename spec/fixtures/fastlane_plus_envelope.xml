@@ -24,15 +24,14 @@
     <Item Name="FaxNo">item_fax_number_value</Item>
     <Item Name="RefNumber">item_reference_number_value</Item>
   </Items>
-  <Listing MarketSegments="listing_market_segments_value">
-    <Classification Name="Location">listing_location_value</Classification>
+  <Listing MarketSegments="Main">
+    <Classification Name="Location">locACT</Classification>
     <Classification Name="Area">listing_area_value</Classification>
-    <Classification Name="WorkType">listing_work_type_value</Classification>
-    <Classification Name="Classification">listing_classification_value</Classification>
-    <Classification Name="SubClassification">listing_sub_classification_value</Classification>
+    <Classification Name="WorkType">CasualVacation</Classification>
+    <Classification Name="Classification">Accounting</Classification>
+    <Classification Name="SubClassification">AccountsOfficersClerks</Classification>
   </Listing>
-  <Salary Type="salary_type_value" Min="salary_min_value" Max="salary_max_value" AdditionalText="salary_additional_text_value"/>
-  <StandOut IsStandOut="Yes" LogoID="stand_out_logo_id_value" Bullet1="stand_out_bullet_1_value" Bullet2="stand_out_bullet_2_value" Bullet3="stand_out_bullet_3_value"/>
+  <Salary Type="AnnualPackage" Min="50000" Max="69999" AdditionalText="salary_additional_text_value"/>
 </Job>
           </Client>
         </FastLanePlus>

@@ -48,7 +48,6 @@ job = Seek::Job.new(
   search_title:               'Graduate Architect',
   description:                'Graduate Architect',
   ad_details:                 '<br><b>This line is bold</b>', # This attribute accepts HTML code
-  listing_market_segments:    'Main Campus',
   listing_location:           'Brisbane',
   listing_work_type:          'FullTime',
   listing_classification:     'DesignArchitecture',

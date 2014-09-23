@@ -2,7 +2,7 @@ module Seek
   class Job
     REQUIRED_ATTRIBUTES = %i[
       reference title search_title description ad_details
-      listing_market_segments listing_location listing_work_type listing_classification listing_sub_classification
+      listing_location listing_work_type listing_classification listing_sub_classification
       salary_type salary_min salary_max
       is_stand_out
     ]
@@ -56,7 +56,7 @@ module Seek
             xml.send 'Item', @item_reference_number, 'Name' => 'RefNumber'
           end
 
-          xml.send 'Listing', 'MarketSegments' => @listing_market_segments do
+          xml.send 'Listing', 'MarketSegments' => 'Main' do
             xml.send 'Classification',  @listing_location,           'Name' => 'Location'
             xml.send 'Classification',  @listing_area,               'Name' => 'Area'
             xml.send 'Classification',  @listing_work_type,          'Name' => 'WorkType'
@@ -72,7 +72,7 @@ module Seek
 
           if @is_stand_out.to_s == 'true'
             xml.send 'StandOut',
-              'IsStandOut' => 'Yes',
+              'IsStandOut' => 'true',
               'LogoID'     => @stand_out_logo_id,
               'Bullet1'    => @stand_out_bullet_1,
               'Bullet2'    => @stand_out_bullet_2,
