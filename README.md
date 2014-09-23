@@ -34,6 +34,7 @@ Seek::Enumerations.work_types      # => [...]
 Seek::Enumerations.items           # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
+Seek::Enumerations.salary_types    # => [...]
 ```
 
 ## How to create a job object
@@ -47,7 +48,6 @@ job = Seek::Job.new(
   search_title:               'Graduate Architect',
   description:                'Graduate Architect',
   ad_details:                 '<br><b>This line is bold</b>', # This attribute accepts HTML code
-  listing_market_segments:    'Main Campus',
   listing_location:           'Brisbane',
   listing_work_type:          'FullTime',
   listing_classification:     'DesignArchitecture',
