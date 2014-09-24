@@ -4,7 +4,15 @@ module Seek
       Dir["#{File.expand_path('..', __FILE__)}/enumerations/*.yml"].each do |file|
         resource = File.basename(file, '.yml').to_sym
 
-        send :define_method, resource, ->{ instance_variable_get("@#{resource}") || instance_variable_set("@#{resource}", create_hash_from_yml(resource)) }
+        send :define_method, resource, ->{
+          result = instance_variable_get("@#{resource}") || instance_variable_set("@#{resource}", create_hash_from_yml(resource))
+
+          result.define_singleton_method(:select_options) do
+            result.map { |enumeration_item| [enumeration_item.description, enumeration_item.id] }
+          end unless result.respond_to?(:select_options)
+
+          result
+        }
       end
 
       private

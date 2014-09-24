@@ -36,6 +36,12 @@ Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruc
 Seek::Enumerations.salary_types    # => [...]
 ```
 
+If you want to use enumerations in Rails forms:
+
+```ruby
+Seek::Enumerations.work_types.select_options # => [[<description>, <id>], ...]
+```
+
 ## How to create a job object
 
 You will need to create Job objects in order to send it through Fastland Plus API.
