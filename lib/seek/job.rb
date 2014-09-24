@@ -3,13 +3,13 @@ module Seek
     REQUIRED_ATTRIBUTES = %i[
       reference title search_title description ad_details
       listing_location listing_work_type listing_classification listing_sub_classification
+      item_job_title
       salary_type salary_min salary_max
       is_stand_out
     ]
 
     NOT_REQUIRED_ATTRIBUTES = %i[
       template_id screen_id application_email application_url residents_only
-      item_job_title item_bullet1 item_bullet2 item_bullet3 item_contact_name item_phone_number item_fax_number item_reference_number
       listing_area
       salary_additional_text
       stand_out_logo_id stand_out_bullet_1 stand_out_bullet_2 stand_out_bullet_3
@@ -20,13 +20,20 @@ module Seek
 
     def initialize(attributes)
       [*REQUIRED_ATTRIBUTES + NOT_REQUIRED_ATTRIBUTES].each do |attribute|
-        instance_variable_set("@#{attribute}", attributes.delete(attribute).to_s)
+        instance_variable_set("@#{attribute}", attributes.delete(attribute))
       end
     end
 
     def valid?
       !REQUIRED_ATTRIBUTES.any? do |attribute|
-        instance_variable_get("@#{attribute}").blank?
+        attribute_value = instance_variable_get("@#{attribute}")
+
+        case attribute_value.class.to_s
+          when 'String'                  then attribute_value.blank?
+          when 'TrueClass', 'FalseClass' then false
+          when 'Fixnum'                  then false
+          else true
+        end
       end
     end
 
@@ -46,22 +53,16 @@ module Seek
           xml.send 'ResidentsOnly',    @residents_only ? 'Yes' : 'No'
 
           xml.send 'Items' do
-            xml.send 'Item', @item_job_title,        'Name' => 'Jobtitle'
-            xml.send 'Item', @item_bullet1,          'Name' => 'Bullet1'
-            xml.send 'Item', @item_bullet2,          'Name' => 'Bullet2'
-            xml.send 'Item', @item_bullet3,          'Name' => 'Bullet3'
-            xml.send 'Item', @item_contact_name,     'Name' => 'ContactName'
-            xml.send 'Item', @item_phone_number,     'Name' => 'PhoneNo'
-            xml.send 'Item', @item_fax_number,       'Name' => 'FaxNo'
-            xml.send 'Item', @item_reference_number, 'Name' => 'RefNumber'
+            xml.send 'Item', @item_job_title, 'Name' => 'Jobtitle'
+            # In order to use another items, firstly you need to setup templates in SEEK
           end
 
           xml.send 'Listing', 'MarketSegments' => 'Main' do
-            xml.send 'Classification',  @listing_location,           'Name' => 'Location'
-            xml.send 'Classification',  @listing_area,               'Name' => 'Area'
-            xml.send 'Classification',  @listing_work_type,          'Name' => 'WorkType'
-            xml.send 'Classification',  @listing_classification,     'Name' => 'Classification'
-            xml.send 'Classification',  @listing_sub_classification, 'Name' => 'SubClassification'
+            xml.send 'Classification', @listing_location,           'Name' => 'Location'
+            xml.send 'Classification', @listing_area,               'Name' => 'Area'
+            xml.send 'Classification', @listing_work_type,          'Name' => 'WorkType'
+            xml.send 'Classification', @listing_classification,     'Name' => 'Classification'
+            xml.send 'Classification', @listing_sub_classification, 'Name' => 'SubClassification'
           end
 
           xml.send 'Salary',
@@ -70,7 +71,7 @@ module Seek
             'Max'            => @salary_max,
             'AdditionalText' => @salary_additional_text
 
-          if @is_stand_out.to_s == 'true'
+          if @is_stand_out
             xml.send 'StandOut',
               'IsStandOut' => 'true',
               'LogoID'     => @stand_out_logo_id,

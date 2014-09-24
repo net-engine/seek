@@ -67,13 +67,6 @@ Another possible attributes (but not required) are:
 * `application_url`
 * `residents_only`
 * `item_job_title`
-* `item_bullet1`
-* `item_bullet2`
-* `item_bullet3`
-* `item_contact_name`
-* `item_phone_number`
-* `item_fax_number`
-* `item_reference_number`
 * `listing_area`
 * `salary_additional_text`
 * `stand_out_logo_id`

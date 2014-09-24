@@ -16,13 +16,6 @@
   <ResidentsOnly>Yes</ResidentsOnly>
   <Items>
     <Item Name="Jobtitle">item_job_title_value</Item>
-    <Item Name="Bullet1">item_bullet1_value</Item>
-    <Item Name="Bullet2">item_bullet2_value</Item>
-    <Item Name="Bullet3">item_bullet3_value</Item>
-    <Item Name="ContactName">item_contact_name_value</Item>
-    <Item Name="PhoneNo">item_phone_number_value</Item>
-    <Item Name="FaxNo">item_fax_number_value</Item>
-    <Item Name="RefNumber">item_reference_number_value</Item>
   </Items>
   <Listing MarketSegments="Main">
     <Classification Name="Location">locACT</Classification>
