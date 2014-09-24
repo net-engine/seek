@@ -31,10 +31,15 @@ For some resources, Seek provides lists with valid values. You can use enumerati
 
 ```ruby
 Seek::Enumerations.work_types      # => [...]
-Seek::Enumerations.items           # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
 Seek::Enumerations.salary_types    # => [...]
+```
+
+If you want to use enumerations in Rails forms:
+
+```ruby
+Seek::Enumerations.work_types.select_options # => [[<description>, <id>], ...]
 ```
 
 ## How to create a job object
@@ -67,13 +72,6 @@ Another possible attributes (but not required) are:
 * `application_url`
 * `residents_only`
 * `item_job_title`
-* `item_bullet1`
-* `item_bullet2`
-* `item_bullet3`
-* `item_contact_name`
-* `item_phone_number`
-* `item_fax_number`
-* `item_reference_number`
 * `listing_area`
 * `salary_additional_text`
 * `stand_out_logo_id`
