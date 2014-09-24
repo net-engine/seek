@@ -31,7 +31,6 @@ For some resources, Seek provides lists with valid values. You can use enumerati
 
 ```ruby
 Seek::Enumerations.work_types      # => [...]
-Seek::Enumerations.items           # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
 Seek::Enumerations.salary_types    # => [...]
