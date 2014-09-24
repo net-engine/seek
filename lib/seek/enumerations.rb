@@ -5,13 +5,11 @@ module Seek
         resource = File.basename(file, '.yml').to_sym
 
         send :define_method, resource, ->{
-          result = instance_variable_get("@#{resource}") || instance_variable_set("@#{resource}", create_hash_from_yml(resource))
+          context = self
+          enumeration = instance_variable_get("@#{resource}") || instance_variable_set("@#{resource}", create_hash_from_yml(resource))
+          enumeration.define_singleton_method(:select_options) { context.send :define_select_options, resource, enumeration } unless enumeration.respond_to?(:select_options)
 
-          result.define_singleton_method(:select_options) do
-            result.map { |enumeration_item| [enumeration_item.description, enumeration_item.id] }
-          end unless result.respond_to?(:select_options)
-
-          result
+          enumeration
         }
       end
 
@@ -35,6 +33,21 @@ module Seek
             object.map! { |i| to_open_struct(i) }
           else
             object
+        end
+      end
+
+      def define_select_options(resource, enumeration)
+        case resource
+          when :nations
+            enumeration.inject([]) do |result, nation|
+              nation.states.each do |state|
+                state.locations.each do |location|
+                  result << ["#{nation.description} > #{state.description} > #{location.description}", location.id]
+                end
+              end && result
+            end
+
+          else enumeration.map { |enumeration_item| [enumeration_item.description, enumeration_item.id] }
         end
       end
     end
