@@ -53,14 +53,3 @@ module Seek
     end
   end
 end
-
-# # In order to use the MarketSegment API:
-# result = HTTParty.post(
-#   'http://webservices.seek.com.au/MarketSegment.asmx/GetMarketClassifiers',
-#   body: { 'marketSegment' => 'Main' }
-# )
-#
-# h = result['SpecificClassification']['list'].inject({}) do |hash, list|
-#   hash[list['value']] = list['listItem'].map { |i| i['value'] } if list['listItem']
-#   hash
-# end
