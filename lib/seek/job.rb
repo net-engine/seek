@@ -54,7 +54,7 @@ module Seek
 
           xml.send 'Items' do
             xml.send 'Item', @item_job_title, 'Name' => 'Jobtitle'
-            # In order to use another items, firstly you need to setup templates in SEEK
+            # In order to use other items, firstly you need to setup templates in SEEK
           end
 
           xml.send 'Listing', 'MarketSegments' => 'Main' do
