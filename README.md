@@ -34,6 +34,7 @@ Seek::Enumerations.work_types      # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
 Seek::Enumerations.salary_types    # => [...]
+Seek::Enumerations.video_positions # => [...]
 ```
 
 If you want to use enumerations in Rails forms:
