@@ -79,6 +79,8 @@ Another possible attributes (but not required) are:
 * `stand_out_bullet_1`
 * `stand_out_bullet_2`
 * `stand_out_bullet_3`
+* `video_embed_code`
+* `video_position`
 
 In order to check if the Job object is valid, just use `job.valid?`.
 

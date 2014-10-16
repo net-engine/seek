@@ -25,6 +25,7 @@
     <Classification Name="SubClassification">AccountsOfficersClerks</Classification>
   </Listing>
   <Salary Type="AnnualPackage" Min="50000" Max="69999" AdditionalText="salary_additional_text_value"/>
+  <VideoLinkAd VideoLink="video_embed_code_value" VideoPosition="1"/>
 </Job>
           </Client>
         </FastLanePlus>
