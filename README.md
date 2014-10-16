@@ -34,6 +34,7 @@ Seek::Enumerations.work_types      # => [...]
 Seek::Enumerations.classifications # => [#<OpenStruct ... sub_classifications = [...]]
 Seek::Enumerations.nations         # => [#<OpenStruct ... nations = [#<OpenStruct ... states = [#<OpenStruct ... locations = [#<OpenStruct ... areas = [...]]]]]
 Seek::Enumerations.salary_types    # => [...]
+Seek::Enumerations.video_positions # => [...]
 ```
 
 If you want to use enumerations in Rails forms:
@@ -78,6 +79,8 @@ Another possible attributes (but not required) are:
 * `stand_out_bullet_1`
 * `stand_out_bullet_2`
 * `stand_out_bullet_3`
+* `video_embed_code`
+* `video_position`
 
 In order to check if the Job object is valid, just use `job.valid?`.
 

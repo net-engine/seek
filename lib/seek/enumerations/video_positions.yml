@@ -1,0 +1,6 @@
+enumerations:
+  :video_positions:
+  - :id: '1'
+    :description: 'On top of the ad details'
+  - :id: '2'
+    :description: 'On the bottom of the ad details'

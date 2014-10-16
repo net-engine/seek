@@ -11,11 +11,10 @@ module Macros
         when :listing_work_type          then Seek::Enumerations.work_types.first.id
         when :listing_classification     then Seek::Enumerations.classifications.first.id
         when :listing_sub_classification then Seek::Enumerations.classifications.first.sub_classifications.first.id
-
         when :salary_type                then Seek::Enumerations.salary_types.first.id
         when :salary_min                 then 50000
         when :salary_max                 then 69999
-
+        when :video_position             then Seek::Enumerations.video_positions.first.id
         else "#{attribute}_value"
       end
 

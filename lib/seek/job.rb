@@ -13,6 +13,7 @@ module Seek
       listing_area
       salary_additional_text
       stand_out_logo_id stand_out_bullet_1 stand_out_bullet_2 stand_out_bullet_3
+      video_embed_code video_position
     ]
 
     attr_accessor(*REQUIRED_ATTRIBUTES)
@@ -54,7 +55,7 @@ module Seek
 
           xml.send 'Items' do
             xml.send 'Item', @item_job_title, 'Name' => 'Jobtitle'
-            # In order to use another items, firstly you need to setup templates in SEEK
+            # In order to use other items, firstly you need to setup templates in SEEK
           end
 
           xml.send 'Listing', 'MarketSegments' => 'Main' do
@@ -78,6 +79,12 @@ module Seek
               'Bullet1'    => @stand_out_bullet_1,
               'Bullet2'    => @stand_out_bullet_2,
               'Bullet3'    => @stand_out_bullet_3
+          end
+
+          if @video_embed_code
+            xml.send 'VideoLinkAd',
+              'VideoLink'     => @video_embed_code,
+              'VideoPosition' => @video_position
           end
         end
       end
