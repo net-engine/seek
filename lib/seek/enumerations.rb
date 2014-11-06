@@ -13,6 +13,25 @@ module Seek
         }
       end
 
+      def description(enumeration, id:)
+        enumerations = case enumeration
+          when :location
+            Seek::Enumerations.nations.map(&:states).flatten.map(&:locations)
+          when :area
+            Seek::Enumerations.nations.map(&:states).flatten.map(&:locations).flatten.map(&:areas)
+          when :classification
+            Seek::Enumerations.classifications
+          when :sub_classification
+            Seek::Enumerations.classifications.map(&:sub_classifications)
+          when :work_type
+            Seek::Enumerations.work_types
+        end.flatten
+
+        resource = enumerations.select { |enum| enum.id == id }.first
+
+        resource.description if resource
+      end
+
       private
 
       def create_hash_from_yml(resource)
