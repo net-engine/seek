@@ -1,3 +1,5 @@
+# SEEK's salary documentation: http://developer.seek.com.au/docs/partner-api/methods/fastlaneplus/salary
+
 module Seek
   class SalaryRanges
     class << self
