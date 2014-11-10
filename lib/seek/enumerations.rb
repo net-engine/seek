@@ -25,6 +25,8 @@ module Seek
             Seek::Enumerations.classifications.map(&:sub_classifications)
           when :work_type
             Seek::Enumerations.work_types
+          when :salary_type
+            Seek::Enumerations.salary_types
         end.flatten
 
         resource = enumerations.select { |enum| enum.id == id }.first
