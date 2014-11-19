@@ -57,9 +57,10 @@ RSpec.describe Seek::Integrations::FastlanePlus do
     context 'when some job is not valid' do
       it 'raises an excpection' do
         job_1 = double valid?: true
-        job_2 = double valid?: false
+        job_2 = double valid?: false, reference: 'AAA111'
+        job_3 = double valid?: false, reference: 'AAA222'
 
-        expect { subject.send_jobs([job_1, job_2]) }.to raise_error('One or more jobs are invalid')
+        expect { subject.send_jobs([job_1, job_2, job_3]) }.to raise_error('Invalid jobs: AAA111, AAA222')
       end
     end
   end

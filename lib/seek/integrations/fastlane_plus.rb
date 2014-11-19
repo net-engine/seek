@@ -11,7 +11,8 @@ module Seek
       end
 
       def send_jobs(jobs)
-        raise 'One or more jobs are invalid' if jobs.any? { |job| !job.valid? }
+        invalid_jobs = jobs.select { |job| !job.valid? }
+        raise "Invalid jobs: #{invalid_jobs.map(&:reference).join(', ')}" if invalid_jobs.any?
 
         call :upload_file, xml: build_envelope(jobs)
       end
