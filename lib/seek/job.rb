@@ -30,8 +30,8 @@ module Seek
         attribute_value = instance_variable_get("@#{attribute}")
 
         attributes << case attribute_value.class.to_s
-          when 'String'                            then attribute_value.blank? ? attribute : nil
-          when 'TrueClass', 'FalseClass', 'Fixnum' then nil
+          when 'String'                                     then attribute_value.blank? ? attribute : nil
+          when 'TrueClass', 'FalseClass', 'Fixnum', 'Float' then nil
           else attribute
         end
 
