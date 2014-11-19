@@ -25,17 +25,22 @@ module Seek
       end
     end
 
-    def valid?
-      !REQUIRED_ATTRIBUTES.any? do |attribute|
+    def missing_attributes
+      REQUIRED_ATTRIBUTES.inject([]) do |attributes, attribute|
         attribute_value = instance_variable_get("@#{attribute}")
 
-        case attribute_value.class.to_s
-          when 'String'                  then attribute_value.blank?
-          when 'TrueClass', 'FalseClass' then false
-          when 'Fixnum'                  then false
-          else true
+        attributes << case attribute_value.class.to_s
+          when 'String'                            then attribute_value.blank? ? attribute : nil
+          when 'TrueClass', 'FalseClass', 'Fixnum' then nil
+          else attribute
         end
-      end
+
+        attributes
+      end.compact
+    end
+
+    def valid?
+      missing_attributes.empty?
     end
 
     def to_xml
