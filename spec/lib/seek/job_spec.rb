@@ -16,6 +16,25 @@ RSpec.describe Seek::Job do
     expect(subject.send(attribute_4)).to eql('D')
   end
 
+  describe '#missing_attributes' do
+    subject { create_valid_job(all_attributes: true) }
+
+    context 'when it has all required attributes' do
+      it 'returns an empty array' do
+        expect(subject.missing_attributes).to eql([])
+      end
+    end
+
+    context 'when it does not have all required attributes' do
+      it 'returns an array with the missing attributes' do
+        required_attribute = described_class::REQUIRED_ATTRIBUTES.sample
+        subject.send("#{required_attribute}=", nil)
+
+        expect(subject.missing_attributes).to eql([required_attribute])
+      end
+    end
+  end
+
   describe '#valid?' do
     subject { create_valid_job(all_attributes: true) }
 
