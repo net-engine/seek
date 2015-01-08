@@ -86,7 +86,7 @@ module Seek
               'Bullet3'    => @stand_out_bullet_3
           end
 
-          if @video_embed_code
+          unless @video_embed_code.blank? || @video_position.blank?
             xml.send 'VideoLinkAd',
               'VideoLink'     => @video_embed_code,
               'VideoPosition' => @video_position

@@ -62,5 +62,27 @@ RSpec.describe Seek::Job do
 
       expect(subject.to_xml).to eql(xml.strip)
     end
+
+    context 'when both video_embed_code and video_position are present' do
+      it 'includes the VideoLinkAd tag' do
+        expect(subject.to_xml).to include('VideoLinkAd')
+      end
+    end
+
+    context 'when video_embed_code is not present' do
+      it 'does not include VideoLinkAd tag' do
+        subject.video_embed_code = ''
+
+        expect(subject.to_xml).to_not include('VideoLinkAd')
+      end
+    end
+
+    context 'when video_position is not present' do
+      it 'does not include VideoLinkAd tag' do
+        subject.video_position = ''
+
+        expect(subject.to_xml).to_not include('VideoLinkAd')
+      end
+    end
   end
 end
