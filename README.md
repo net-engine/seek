@@ -16,7 +16,7 @@ gem 'seek', github: 'net-engine/seek'
 
 And then execute:
 
-    $ bundle
+    bundle install
 
 # Usage
 
