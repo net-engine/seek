@@ -60,6 +60,8 @@ enumerations:
       - :id: 'Sydney'
         :description: 'Sydney'
         :areas:
+        - :id:
+          :description: 'All Sydney'
         - :id: 'CBDInnerWestEasternSuburbs'
           :description: 'CBD, Inner West & Eastern Suburbs'
         - :id: 'NorthShoreNorthernBeaches'
@@ -112,6 +114,8 @@ enumerations:
       - :id: 'Brisbane'
         :description: 'Brisbane'
         :areas:
+        - :id:
+          :description: 'All Brisbane'
         - :id: 'BaysideEasternSuburbs'
           :description: 'Bayside & Eastern Suburbs'
         - :id: 'BrisbaneCBDInnerSuburbs'
@@ -251,6 +255,8 @@ enumerations:
       - :id: 'Melbourne'
         :description: 'Melbourne'
         :areas:
+        - :id:
+          :description: 'All Melbourne'
         - :id: 'BaysideSouthEasternSuburbs'
           :description: 'Bayside & South Eastern Suburbs'
         - :id: 'MelbourneCBDInnerSuburbs'
@@ -316,6 +322,8 @@ enumerations:
       - :id: 'Perth'
         :description: 'Perth'
         :areas:
+        - :id:
+          :description: 'All Perth'
         - :id: 'CBDInnerWesternSuburbs'
           :description: 'CBD, Inner & Western Suburbs'
         - :id: 'PerthEasternSuburbs'
@@ -340,6 +348,8 @@ enumerations:
       - :id: 'Americas'
         :description: 'Americas'
         :areas:
+        - :id:
+          :description: 'All Americas'
         - :id: 'CaribbeanCentralSouthAmerica'
           :description: 'Caribbean, Central & South America'
         - :id: 'USACanada'
@@ -348,6 +358,8 @@ enumerations:
       - :id: 'AsiaPacific'
         :description: 'Asia Pacific'
         :areas:
+        - :id:
+          :description: 'All Asia Pacific'
         - :id: 'CentralAsia'
           :description: 'Central Asia'
         - :id: 'ChinaHongKongTaiwan'
@@ -364,6 +376,7 @@ enumerations:
       - :id: 'EuropeRussia'
         :description: 'Europe & Russia'
         :areas:
+        - :description: 'Europe and Russia'
         - :id: 'RussiaEasternEurope'
           :description: 'Russia & Eastern Europe'
         - :id: 'WesternEurope'
@@ -372,6 +385,8 @@ enumerations:
       - :id: 'MiddleEastAfrica'
         :description: 'Middle East & Africa'
         :areas:
+        - :id:
+          :description: 'All Middle East and Africa'
         - :id: 'MiddleEastNorthAfrica'
           :description: 'Middle East & North Africa'
         - :id: 'SubSaharanAfrica'
@@ -386,6 +401,8 @@ enumerations:
       - :id: 'Auckland'
         :description: 'Auckland'
         :areas:
+        - :id:
+          :description: 'All Auckland'
         - :id: 'AucklandCentral'
           :description: 'Auckland Central'
         - :id: 'ManukauEastAuckland'
@@ -400,6 +417,8 @@ enumerations:
       - :id: 'BayofPlenty'
         :description: 'Bay of Plenty'
         :areas:
+        - :id:
+          :description: 'All Bay of Plenty'
         - :id: 'RestofBayofPlenty'
           :description: 'Rest of Bay of Plenty'
         - :id: 'Rotorua'
@@ -410,6 +429,8 @@ enumerations:
       - :id: 'Canterbury'
         :description: 'Canterbury'
         :areas:
+        - :id:
+          :description: 'All Canterbury'
         - :id: 'Christchurch'
           :description: 'Christchurch'
         - :id: 'NorthCanterbury'
@@ -422,6 +443,8 @@ enumerations:
       - :id: 'GisborneRegion'
         :description: 'Gisborne'
         :areas:
+        - :id:
+          :description: 'All Gisborne'
         - :id: 'Gisborne'
           :description: 'Gisborne'
         - :id: 'RestofGisborne'
@@ -430,6 +453,8 @@ enumerations:
       - :id: 'HawkesBay'
         :description: 'Hawkes Bay'
         :areas:
+        - :id:
+          :description: 'All Hawkes Bay'
         - :id: 'Hastings'
           :description: 'Hastings'
         - :id: 'Napier'
@@ -440,6 +465,8 @@ enumerations:
       - :id: 'Manawatu'
         :description: 'Manawatu'
         :areas:
+        - :id:
+          :description: 'All Manawatu'
         - :id: 'PalmerstonNorth'
           :description: 'Palmerston North'
         - :id: 'RestofManawatu'
@@ -450,6 +477,8 @@ enumerations:
       - :id: 'Marlborough'
         :description: 'Marlborough'
         :areas:
+        - :id:
+          :description: 'All Marlborough'
         - :id: 'Blenheim'
           :description: 'Blenheim'
         - :id: 'RestofMarlborough'
@@ -458,6 +487,7 @@ enumerations:
       - :id: 'Northland'
         :description: 'Northland'
         :areas:
+        - :description: 'Northland'
         - :id: 'RestofNorthland'
           :description: 'Rest of Northland'
         - :id: 'Whangarei'
@@ -466,6 +496,7 @@ enumerations:
       - :id: 'Otago'
         :description: 'Otago'
         :areas:
+        - :description: 'Otago'
         - :id: 'Dunedin'
           :description: 'Dunedin'
         - :id: 'QueenstownWanaka'
@@ -476,6 +507,8 @@ enumerations:
       - :id: 'Southland'
         :description: 'Southland'
         :areas:
+        - :id:
+          :description: 'All Southland'
         - :id: 'Invercargill'
           :description: 'Invercargill'
         - :id: 'RestofSouthland'
@@ -484,6 +517,8 @@ enumerations:
       - :id: 'Taranaki'
         :description: 'Taranaki'
         :areas:
+        - :id:
+          :description: 'All Taranaki'
         - :id: 'NewPlymouth'
           :description: 'New Plymouth'
         - :id: 'RestofTaranaki'
@@ -492,6 +527,8 @@ enumerations:
       - :id: 'Tasman'
         :description: 'Tasman'
         :areas:
+        - :id:
+          :description: 'All Tasman'
         - :id: 'Nelson'
           :description: 'Nelson'
         - :id: 'RestofTasman'
@@ -500,6 +537,8 @@ enumerations:
       - :id: 'Waikato'
         :description: 'Waikato'
         :areas:
+        - :id:
+          :description: 'All Waikato'
         - :id: 'Hamilton'
           :description: 'Hamilton'
         - :id: 'RestofWaikato'
@@ -512,6 +551,7 @@ enumerations:
       - :id: 'Wellington'
         :description: 'Wellington'
         :areas:
+        - :description: 'Wellington'
         - :id: 'HuttValley'
           :description: 'Hutt Valley'
         - :id: 'PoriruaKapitiCoast'
@@ -524,6 +564,7 @@ enumerations:
       - :id: 'WestCoast'
         :description: 'West Coast'
         :areas:
+        - :description: 'West Coast'
         - :id: 'Greymouth'
           :description: 'Greymouth'
         - :id: 'RestofWestCoast'
@@ -546,6 +587,8 @@ enumerations:
       - :id: 'RestoftheUK'
         :description: 'Rest of the UK'
         :areas:
+        - :id:
+          :description: 'All Rest of UK'
         - :id: 'ChannelIslands'
           :description: 'Channel Islands'
         - :id: 'Midlands'
