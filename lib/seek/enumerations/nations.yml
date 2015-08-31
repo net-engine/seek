@@ -376,7 +376,8 @@ enumerations:
       - :id: 'EuropeRussia'
         :description: 'Europe & Russia'
         :areas:
-        - :description: 'Europe and Russia'
+        - :id:
+          :description: 'All Europe and Russia'
         - :id: 'RussiaEasternEurope'
           :description: 'Russia & Eastern Europe'
         - :id: 'WesternEurope'
@@ -487,7 +488,8 @@ enumerations:
       - :id: 'Northland'
         :description: 'Northland'
         :areas:
-        - :description: 'Northland'
+        - :id:
+          :description: 'All Northland'
         - :id: 'RestofNorthland'
           :description: 'Rest of Northland'
         - :id: 'Whangarei'
@@ -496,7 +498,8 @@ enumerations:
       - :id: 'Otago'
         :description: 'Otago'
         :areas:
-        - :description: 'Otago'
+        - :id:
+          :description: 'All Otago'
         - :id: 'Dunedin'
           :description: 'Dunedin'
         - :id: 'QueenstownWanaka'
@@ -551,7 +554,8 @@ enumerations:
       - :id: 'Wellington'
         :description: 'Wellington'
         :areas:
-        - :description: 'Wellington'
+        - :id:
+          :description: 'All Wellington'
         - :id: 'HuttValley'
           :description: 'Hutt Valley'
         - :id: 'PoriruaKapitiCoast'
@@ -564,7 +568,8 @@ enumerations:
       - :id: 'WestCoast'
         :description: 'West Coast'
         :areas:
-        - :description: 'West Coast'
+        - :id:
+          :description: 'All West Coast'
         - :id: 'Greymouth'
           :description: 'Greymouth'
         - :id: 'RestofWestCoast'
