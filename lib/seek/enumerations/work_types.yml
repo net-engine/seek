@@ -1,6 +1,6 @@
 enumerations:
   :work_types:
-  - :id: 'CasualVacation'
+  - :id: 'Casual'
     :description: 'Casual/Vacation'
   - :id: 'ContractTemp'
     :description: 'Contract/Temp'
