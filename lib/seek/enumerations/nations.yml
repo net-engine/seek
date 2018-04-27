@@ -14,7 +14,7 @@ enumerations:
       :description: 'New South Wales'
       :locations:
       - :id: 'AlburyWodongaMurray'
-        :description: 'Albury Wodonga & Murray'
+        :description: 'Albury Area'
         :areas: []
 
       - :id: 'BlueMountainsCentralWest'
@@ -38,7 +38,7 @@ enumerations:
         :areas: []
 
       - :id: 'GoulburnSouthernTablelands'
-        :description: 'Goulburn & Southern Tablelands'
+        :description: 'Southern Highlands & Tablelands'
         :areas: []
 
       - :id: 'LismoreFarNorthCoast'
@@ -82,7 +82,7 @@ enumerations:
         :areas: []
 
       - :id: 'TumutSouthernHighlandsSnowy'
-        :description: 'Tumut, Southern Highlands & Snowy'
+        :description: 'Tumut, Snowy & Monaro'
         :areas: []
 
       - :id: 'WaggaWaggaRiverina'
@@ -152,7 +152,7 @@ enumerations:
         :areas: []
 
       - :id: 'MtIsaWesternQLD'
-        :description: 'Mt Isa & Western QLD'
+        :description: 'Western QLD'
         :areas: []
 
       - :id: 'RockhamptonCapricornCoast'
@@ -172,7 +172,7 @@ enumerations:
         :areas: []
 
       - :id: 'TownsvilleNorthernQLD'
-        :description: 'Townsville & Northern QLD'
+        :description: 'Northern QLD'
         :areas: []
 
     - :id: 'SA'
@@ -214,7 +214,7 @@ enumerations:
       :description: 'Tasmania'
       :locations:
       - :id: 'CentralSouthEast'
-        :description: 'Central & South East'
+        :description: 'Central & South East TAS'
         :areas: []
 
       - :id: 'DevonportNorthWest'
@@ -245,7 +245,7 @@ enumerations:
         :areas: []
 
       - :id: 'GeelongGreatOceanRoad'
-        :description: 'Geelong & Great Ocean Road'
+        :description: 'South West Coast VIC'
         :areas: []
 
       - :id: 'HorshamGrampians'
@@ -281,7 +281,7 @@ enumerations:
         :areas: []
 
       - :id: 'TraralgonLaTrobeValley'
-        :description: 'Traralgon & La Trobe Valley'
+        :description: 'West Gippsland and Latrobe Valley'
         :areas: []
 
       - :id: 'YarraValleyHighCountry'
